@@ -56,20 +56,20 @@ function takeCommand(message){
       speak("Hello Sir, How May I Help You?");
   }
   else if(message.includes("open home page")){
-      window.open("http://127.0.0.1:5500/index.html", "_blank");
+      window.open("./index.html", "_blank");
       speak("Opening Expo...")
   }
   else if(message.includes("open sign up")){
-      window.open("http://127.0.0.1:5500/signup.html", "_blank");
+      window.open("./signup.html", "_blank");
       speak("Opening the Sign up...")
   }
   else if(message.includes("open sign in")){
-      window.open("http://127.0.0.1:5500/signin.html", "_blank");
+      window.open("./signin.html", "_blank");
       speak("Opening the sign in...")
   }
 
   else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
-      window.open("http://127.0.0.1:5500/index.html", "+"),( "_blank");
+      window.open("./index.html", "+"),( "_blank");
       const finalText = "This is what i found on internet regarding " + message;
     speak(finalText);
 
