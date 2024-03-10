@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup Page</title>
+    <link rel="stylesheet" href="./signup.css">
+    <script src="jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="outerbox">
+        <div id="innerbox">
+            <div class="leftinnerbox">  
+                <div style="margin: 40px 30px; ">
+                        <h1 style="font-weight: bold;font-size: 25px;  ">Signup</h1>
+                         <P style=" font-size: 18px; color: #DBDBDB; margin-top: 20px;">
+                             Get access to your Orders,
+                             <br>
+                             Wishlist and Recommendations
+                         </P>
+                    <div style="margin: 90px 5px 0px 6px;">
+                        <img  src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="logoname">
+                    </div>
+                </div> 
+            </div>
+
+            <div class="rightinnerbox">
+                <div style="display: flex; justify-content: center; margin-top: 34px;">
+                    <input id="phone" class="mobile" type="number" placeholder="Enter Mobile Number"/>
+                </div>
+                <div style="display: flex; justify-content: center; margin-top: 34px;">
+                    <input id="naam" class="name" type="text" placeholder="Enter Your Name">
+                </div>
+                <div style="display: flex; justify-content: center; margin-top: 34px;">
+                    <input id="pass" class="password" type="password" placeholder="Enter Password">
+                </div>
+                <div style="margin-top: 20px;">
+                    <P class="textm">By continuing, you agree to Flipkart's
+                    <span style="color: blue;">Terms of Use</span>  and 
+                    <span style="color: blue;">Privacy policy</span>
+                    </P>
+                 </div>
+                <div style="display: flex; margin-top: 10px; justify-content: center;">
+                    <button class="continue" style="border: none; background-color: orangered; color: #ffffff; font-weight: bold; font-size: 20px;width: 80%; padding: 10px;" onclick="singup()">
+                        CONTINUE
+                    </button>
+                </div>
+                <div style="display: flex; margin-top: 10px; justify-content: center;">
+                    <a href="./signin.html" style="text-decoration: none; display: flex; width: 80%;">
+                    <button class="new" >
+                        Existing Usor? Login
+                    </button>
+                    </a>
+                </div>
+           
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./singup.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $("#container").load("./navabar.html");
+});
+</script>
+
+</html>
+
+

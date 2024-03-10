@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: white;
+    
+}
+
+body{
+    background-color: #F1F2F4;
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 0% 0% 0%;
+    background-color: #FFFFFF;
+    position: sticky;
+}
+#nav1{
+    display: flex;
+    flex-direction: column;
+}
+#logo_name{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+    color:#2A55E5;
+    font-weight: bold;
+}
+#input_data{
+    border: none;
+    width: 450px;
+    height: 20px;
+    padding: 12px;
+    background-color: #F0F5FF;
+    font-size: 17px;
+}
+.navtab{
+    display: flex;
+    align-items: center;  
+}
+#Searchbar{
+    background-color: #F0F5FF;
+    padding: 4px;
+    border-radius: 10px;
+}
+option{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+select{
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#categories{
+    height: 127px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6px;
+    margin: 12px;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+#categories > div > img{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+}
+#categories > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Login{
+    display: flex;
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+#button1{
+        background-color: transparent;
+        border: 3px solid #00d7c3;
+        border-radius: 50px;
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        color: #00d7c3;
+      }
+      #button1:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #2A55E5;
+        border: 3px solid #2A55E5;
+      }
