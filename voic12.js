@@ -70,7 +70,7 @@ function takeCommand(message){
       speak(finalText);
   }
   else {
-      window.open("http://127.0.0.1:5500/assis.html ", "+")}( "_blank");
+      window.open("http:./index.html ", "+")}( "_blank");
       const finalText = "I found some information for " + message + " on EXPO";
       speak(finalText);
   }
