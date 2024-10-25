@@ -120,7 +120,7 @@ function Product(){
      price1.innerHTML = element.price
     let price2 = document.createElement("span");
     price2.innerHTML = element.actualprice
-        price2.style.color="red"
+        price2.style.color="red";
 
     innerbox.append(price1, price2);
     innerbox.className = "innerbox"
