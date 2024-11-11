@@ -2,7 +2,7 @@ const loadVoices = () => {
   window.speechSynthesis.onvoiceschanged = () => {
 
     let voices = window.speechSynthesis.getVoices();
-  //  an object to store voices by language code
+ 
     let voicesByLanguage = {};
     voices.forEach((voice) => {
       voicesByLanguage[voice.lang] = voice;
@@ -12,10 +12,12 @@ const loadVoices = () => {
     
       if (!languageCode) {
         languageCode = "en-US";
+        languageCode = "en-UK";
       }
 
       if (!voicesByLanguage[languageCode]) {
         languageCode = "en-US";
+        languageCode = "en-UK";
       }
 
       let msg = new SpeechSynthesisUtterance();
@@ -27,7 +29,7 @@ const loadVoices = () => {
       window.speechSynthesis.speak(msg);
     };
 
-    let tags = document.querySelectorAll("p, a, h1, h2, h3, li, option ");
+    let tags = document.querySelectorAll("p","h1","h2","li","option");
 
  
     tags.forEach((tag) => {
@@ -47,10 +49,10 @@ const loadVoices = () => {
 
         let interval = setInterval(() => {
           if (!window.speechSynthesis.speaking) {
-            tag.style.removeProperty("background-color");
+            tags.style.removeProperty("background-color");
             clearInterval(interval);
           }
-        }, 100);
+        }, 1000);
       });
     });
   };
@@ -59,7 +61,7 @@ const loadVoices = () => {
 
 loadVoices();
 
-window.speechSynthesis.speak("Hello World");
+window.speechSynthesis.speak();
 function detectLanguage(text) {
   let languageCode = getLanguageCodeFromText(text);
   return languageCode;
